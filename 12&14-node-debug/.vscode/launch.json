@@ -1,0 +1,47 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // 第12节 & 14节 attach
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "attach模式",
+            "port": 8888,
+            // "processId": "${command:PickProcess}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+        },
+        // 第12节 launch
+        {
+            "name": "launch模式",
+            "program": "${workspaceFolder}/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "stopOnEntry": true
+        },
+        // 第14节 launch
+        {
+            "name": "launch模式2",
+            "program": "${workspaceFolder}/test.ts",
+            "args": [
+                "jacle",
+                "tina"
+            ],
+            "runtimeExecutable": "ts-node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "console": "integratedTerminal",
+            "stopOnEntry": true
+        },
+    ]
+}

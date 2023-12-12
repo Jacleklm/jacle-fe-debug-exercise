@@ -1,0 +1,8 @@
+diff --git a/node_modules/lodash/const.js b/node_modules/lodash/const.js
+new file mode 100644
+index 0000000..f07938f
+--- /dev/null
++++ b/node_modules/lodash/const.js
+@@ -0,0 +1 @@
++const name = 'I am a patch'
+\ No newline at end of file
